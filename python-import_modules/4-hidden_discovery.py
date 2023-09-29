@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import hidden_4
+from variable_load_5 import a
 if __name__ == "__main__":
-    for i in sorted(dir(hidden_4)):
-        if not i[:2] == "__":
-            print(i)
+    print(a)
