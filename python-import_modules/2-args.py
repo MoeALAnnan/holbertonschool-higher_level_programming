@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 if __name__ == '__main__':
-    if len(sys.argv) == 1 or system.argv[0] is NULL:
+    if len(sys.argv) == 1 or sys.argv[0] is None:
         print(f"0 argument.")
     elif len(sys.argv) == 2:
         print(f"{len(sys.argv) - 1} argument:")
