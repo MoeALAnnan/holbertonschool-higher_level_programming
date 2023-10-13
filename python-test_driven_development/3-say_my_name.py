@@ -1,13 +1,12 @@
-#!/usr/bin/python3
-"""module that prints My name is <first name> <last name>"""
-
-
-def say_my_name(first_name, last_name=""):
-    """prints my name"""
+def add_integer(a, b=98):
+    """ function to add two integers """
     try:
-        print("My name is {:s} {:s}".format(first_name, last_name))
-    except:
-        if type(first_name) is not str:
-            raise TypeError("first_name must be a string")
-        if type(last_name) is not str:
-            raise TypeError("last_name must be a string")
+        result = a + b
+        return int(result)
+    except TypeError as e:
+        if type(a) is not int:
+            raise TypeError("a must be an integer")
+        elif type(b) is not int:
+            raise TypeError("b must be an integer")
+        else:
+            raise e
