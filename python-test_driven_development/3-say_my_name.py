@@ -1,12 +1,9 @@
-def add_integer(a, b=98):
-    """ function to add two integers """
-    try:
-        result = a + b
-        return int(result)
-    except TypeError as e:
-        if type(a) is not int:
-            raise TypeError("a must be an integer")
-        elif type(b) is not int:
-            raise TypeError("b must be an integer")
-        else:
-            raise e
+def say_my_name(first_name, last_name=""):
+    """ a function that prints 2 strings """
+    if type(first_name) is not str:
+        raise TypeError("first_name must be a string")
+
+    if type(last_name) is not str:
+        raise TypeError("last_name must be a string")
+
+    print("My name is {:s} {:s}".format(first_name, last_name))
