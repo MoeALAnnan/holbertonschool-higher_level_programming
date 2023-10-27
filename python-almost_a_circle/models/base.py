@@ -8,12 +8,10 @@ class Base:
     The goal of it is to manage id attribute in all your future classes and
     to avoid duplicating the same code (by extension, same bugs)
     """
-
     __nb_objects = 0
 
     def __init__(self, id=None):
         """ init method"""
-
         if id is not None:
             self.id = id
         else:
