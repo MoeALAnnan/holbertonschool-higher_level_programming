@@ -6,10 +6,10 @@ class Rectangle(Base):
     """
     this class inherits from base
     """
-    __nb_objects = 0
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ init method"""
+        Base.__init__(self, id)
         self.__width = width
         self.__height = height
         self.__x = x
